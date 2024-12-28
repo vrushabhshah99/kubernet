@@ -2,7 +2,7 @@ kubectl get nodes                #to show all nodes in your cluster
 kubectl get pods                 # to show all pods
 kubectl get pod
 kubectl get po
-kubectl get po -o wide           # to show extra info about pod
+kubectl get po -o wide           # to show more details about pod
 kubectl describe pod nginxpod    # to describe pod
 kubectl logs nginxpod            # to see logs of pod 
 kubectl apply -f nginxpod.yml    # to create pod
