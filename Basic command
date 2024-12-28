@@ -1,0 +1,8 @@
+kubectl get nodes                #to see created nodes
+kubectl get pods                 # to see created pods
+kubectl get pod
+kubectl get po
+kubectl get po -o wide           # to see extra info about pod
+kubectl describe pod nginxpod    # to see describe pod
+kubectl logs nginxpod            # to see logs of pod 
+kubectl exec -it nginxpod -- /bin/bash   # to execute the pod
