@@ -1,0 +1,25 @@
+# mydeployment.yml:
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: mydeployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      env: dev
+  template:
+       metadata:
+          labels:
+              env: dev
+       spec:
+            containers:
+                 - name: nginxcontaine
+                   image: nginx
+                   ports:
+                     - containerPort: 80
+
+
+#this type to give updates/rollout the pod
+#used to switch back the older version of pod
